@@ -1,0 +1,68 @@
+// Core variables and mixins
+@import "bootstrap/less/variables.less";
+@import "bootstrap/less/mixins.less";
+
+// Reset and dependencies
+@import "bootstrap/less/normalize.less";
+
+// Core CSS
+@import "bootstrap/less/scaffolding.less";
+@import "bootstrap/less/type.less";
+@import "bootstrap/less/grid.less";
+@import "bootstrap/less/forms.less";
+@import "bootstrap/less/buttons.less";
+
+//symbol
+
+html, body, footer {
+  background: #2a2a2b;
+}
+
+footer {
+  text-align: center;
+}
+
+.chart {
+  width: 100%;
+}
+
+.symbols {
+  .symbolbox {
+    .symbol, .search {
+      padding: 10px;
+      background-color: #eee;
+      height: 100px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      margin-bottom: 20px;
+
+      .symbol-header {
+        margin: 0;
+        font-size: 1.2em;
+      }
+
+      .symbol-clear {
+        float: right;
+        font-size: 1.2em;
+        margin-top: -10px;
+        margin-right: -10px;
+        cursor: pointer;
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          color: white;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+
+.add-symbol {
+  margin-top: 20px;
+}
